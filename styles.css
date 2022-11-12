@@ -130,7 +130,7 @@ header{
 /*iphone 11 section */
 
 .iphone-11{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("skiinstruct.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("skiinstructtransparent.png");
 }
 
 .title-dark{
@@ -148,7 +148,7 @@ header{
 /*watch section*/
 
 .watch{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("hockeywin.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("hockeywintransparent.png");
 }
 
 .title-heading-watch{
@@ -181,11 +181,11 @@ header{
     }
 
     .iphone-11{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(skiinstruct.jpg)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(skiinstructtransparent.png)
     }
 
     .watch{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywin.jpg)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywintransparent.png)
     }
 
     .hero{
@@ -376,11 +376,11 @@ header{
     }
 
     .iphone-11{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(skiinstruct.jpg)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(skiinstructtransparent.png)
     }
 
     .watch{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywin.jpg)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywintransparent.png)
     }
 
     .hero{
