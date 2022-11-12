@@ -39,11 +39,11 @@ header{
     justify-content: space-between;
     margin: 0 -1rem;
 }
-
-.nav-list-mobile{
+/*
+.nav-list-mobile{ keep it like this I think
     display: none;
 }
-
+*/
 .nav-link{
     font-size: 1.4rem;
     color: #fff;
@@ -58,26 +58,26 @@ header{
 .nav-link-apple{
     width: 1.6rem;
     height: 4.4rem;
-    background: url("background.jpg") center no-repeat; /* might have to input images differently*/
+    background: url("Rlogo16x.png") center no-repeat; /* might have to input images differently*/
 }
 
 .nav-link-search{
     width: 1.6rem;
     height: 4.4rem;
-    background: url() center no-repeat;
+    background: url("Rlogo16xwhite.png") center no-repeat;
 }
 
 .nav-link-bag{
     width: 1.4rem;
     height: 4.4rem;
-    background: url() center no-repeat;
+    background: url("Rlogo16xwhite.png") center no-repeat;
 
 }
 
 /*iphone 11 pro section*/
 .iphone-11-pro{
     height: 69.2rem;
-    background: url(background.jpg);
+    background: url("background.jpg");
     margin-top: 4.4rem;
     
 
@@ -151,7 +151,7 @@ header{
 
 .title-heading-watch{
     height: 7.8rem;
-    background: url("background.jpg") center no-repeat;/*supposed to be logo*/
+    background: url("Rlogo16xwhite.png") center no-repeat;/*supposed to be logo*/
     background-size: auto 7.8rem;
     margin-top: 1.6rem;
 }
@@ -173,3 +173,247 @@ header{
 
 /*end*/
 
+@media screen and (max-width: 1068px){
+    .iphone-11-pro{
+        background:url(background.jpg)
+    }
+
+    .iphone-11{
+        background:url(skiinstruct.jpg)
+    }
+
+    .watch{
+        background:url(hockeywin.jpg)
+    }
+
+    .hero{
+        height: 65rem;
+        background-size: auto 69.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .title-heading{
+        font-size: 4.4rem;
+    }
+
+    .title-sub-heading{
+        font-size: 2.4rem;
+    }
+
+    .cta-link:nth-child(2){
+        margin-left: 2rem;
+    }
+
+    .title-heading-watch{
+        height: 6.2rem;
+        background: url("Rlogo16x.png") center no-repeat;
+        background-size: auto 6.2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 767px){
+    header{
+        height: 4.8rem;
+        transition: background .36s cubic-bezier(0.32, 0,08, 0.24, 1), 
+        height .56s cubic-bezier(0.32, 0.08, 0.24, 1);
+    }
+
+    header .container{
+        padding: 0;
+    }
+
+    .nav-list{
+        margin-top: 0;
+    }
+    
+    .nav-list-larger{
+        display: none;
+    }
+/*
+    .nav-list-mobile{
+        display: flex;
+    }
+*/
+    .nav-item{
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item-hidden{
+        display: none;
+    }
+
+    .mobile-menu{
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .line{
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: #fff;
+        transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    .line-top{
+        margin-top: 6px;
+    }
+
+    .line-bottom{
+        margin-top: -.4rem;
+    }
+
+    .active .line-top{
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    .active .line-bottom{
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    header.active{
+        height: 100%;
+        background-color: #000;
+    }
+
+    .nav-link-apple{
+        width: 1.8rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 1500;
+    }
+
+    .nav-link-bag{
+        width: 1.6rem;
+        height: 4.8rem;
+        transition: opacity 3s;
+    }
+
+    .nav{
+        position: relative;
+    }
+
+    .nav-link{
+        font-size: 1.7rem;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    .nav-list-larger{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s;
+    }
+
+    .active .nav-list-larger{
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .nav-link-bag{
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .nav-list-larger .nav-item{
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255,255,255,.1);
+    }
+
+    .nav-list-larger .nav-item:nth-child(9){
+        border-bottom: none;
+    }
+
+    .active .nav-list-larger .nav-item{
+        animation: 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 735px){
+    .iphone-11-pro{
+        background:url(background.jpg)
+    }
+
+    .iphone-11{
+        background:url(skiinstruct.jpg)
+    }
+
+    .watch{
+        background:url(hockeywin.jpg)
+    }
+
+    .hero{
+        height: 50rem;
+        background-size: auto 54.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+        padding-top: 3.7rem;
+    }
+
+    .title-heading{
+        font-size: 3.2rem;
+    }
+
+    .title-sub-heading{
+        font-size: 1.9rem;
+    }
+
+    .title-heading-watch{
+        margin-top: -.5rem;
+        margin-bottom: 0;
+    }
+
+    .title-price{
+        font-size: 1.4rem;
+    }
+
+    .cta{
+        margin-top: .7rem;
+    }
+
+    .cta-link{
+        font-size: 1.9rem;
+    }
+}
