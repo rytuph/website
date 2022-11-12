@@ -1,29 +1,107 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Ryan Zhang's Website</title>
-    <link rel="stylesheet" href= "style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ryan Zhang</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <img src="logo.jpg" class = "logo">
-            <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Me</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </div>
-
-        <div class="content">
-            <h1>Something</h1>
-            <p> description idk what to put yet,<br>press bell icon to view more</p>
-            <div>
-                <button type="button"><span></span>Watch More</button>
-                <button type="button"><span></span>Contact</button>
+    <header>
+        <class class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <span class="line line-top"></span>
+                            <span class="line line-bottom"></span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-apple"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-mobile -->
+                <ul class="nav-list nav-list-larger"> 
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-apple"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Social Medias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/rytuph" class="nav-link">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/ryanzhang-link/" class="nav-link">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-search"></a>
+                    </li>
+                    <li class="nav-item nav-item-hidden">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-larger -->
+            </nav>
+        </class>
+    </header>
+    <section class="hero iphone-11-pro">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-heading">Tennis Coach</h2>
+                <h3 class="title-sub-heading">City View Tennis Club</h3>
+                <p class="title-price">2020 - Present</p>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link cta-link-darker">Learn More ></a>
+                <a href="#" class="cta-link cta-link-darker">Contact ></a>
             </div>
         </div>
-
-    </div>
+    </section>
+    <section class="hero iphone-11">
+        <div class="container">
+            <div class="title title-dark">
+                <h2 class="title-heading">Ski Instructor</h2>
+                <h3 class="title-sub-heading">Ottawa Chinese Ski and Snowboard Club &<br>Camp Fortune</h3>
+                <p class="title-price"> 2019 - Present</p>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link cta-link-darker">Learn More ></a>
+                <a href="#" class="cta-link cta-link-darker">Contact ></a>
+            </div>
+        </div>
+    </section>
+    <section class="hero watch">
+        <div class="container">
+            <div class="title title-dark">
+                <h2 class="title-heading">Hockey Player</h2>
+                <h3 class="title-sub-heading">Nepean Raiders</h3>
+                <p class="title-price"> 2012 - 2022</p>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link cta-link-darker">Learn More ></a>
+                <a href="#" class="cta-link cta-link-darker">Contact ></a>
+            </div>
+        </div>
+    </section>
+<script src="main.js"> </script>
 </body>
 </html>
