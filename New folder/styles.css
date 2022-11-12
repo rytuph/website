@@ -39,11 +39,11 @@ header{
     justify-content: space-between;
     margin: 0 -1rem;
 }
-/*
-.nav-list-mobile{ keep it like this I think
+
+.nav-list-mobile{
     display: none;
 }
-*/
+
 .nav-link{
     font-size: 1.4rem;
     color: #fff;
@@ -232,11 +232,11 @@ header{
     .nav-list-larger{
         display: none;
     }
-/*
+
     .nav-list-mobile{
         display: flex;
     }
-*/
+
     .nav-item{
         width: 4.8rem;
         height: 4.8rem;
