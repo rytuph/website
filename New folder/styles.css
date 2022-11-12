@@ -58,19 +58,19 @@ header{
 .nav-link-apple{
     width: 1.6rem;
     height: 4.4rem;
-    background: url("Rlogo16x.png") center no-repeat; /* might have to input images differently*/
+    background: url("Rlogo16xwhite.png") center no-repeat; /* might have to input images differently*/
 }
 
 .nav-link-search{
     width: 1.6rem;
     height: 4.4rem;
-    background: url("Rlogo16xwhite.png") center no-repeat;
+    background: url("github.png") center no-repeat;
 }
 
 .nav-link-bag{
     width: 1.4rem;
     height: 4.4rem;
-    background: url("Rlogo16xwhite.png") center no-repeat;
+    background: url("linkedin.png") center no-repeat;
 
 }
 
