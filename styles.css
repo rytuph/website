@@ -148,7 +148,9 @@ header{
 /*watch section*/
 
 .watch{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("hockeywintransparent.png");
+    
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("hockeywinblack.png");
+    background-color: #000;
 }
 
 .title-heading-watch{
@@ -185,7 +187,8 @@ header{
     }
 
     .watch{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywintransparent.png)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywinblack.png)
+        background-color: #000;
     }
 
     .hero{
@@ -380,7 +383,8 @@ header{
     }
 
     .watch{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywintransparent.png)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywinblack.png)
+        background-color: #000;
     }
 
     .hero{
