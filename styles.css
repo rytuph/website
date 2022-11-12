@@ -375,15 +375,15 @@ header{
 
 @media screen and (max-width: 735px){
     .iphone-11-pro{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(background.jpg)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("background.jpg")
     }
 
     .iphone-11{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(skiinstructtransparent.png)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("skiinstructtransparent.png")
     }
 
     .watch{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywinblack.png)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("hockeywinblack.png")
         background-color: #000;
     }
 
