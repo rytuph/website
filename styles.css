@@ -165,8 +165,8 @@ header{
     background-size: auto 73.6rem;
     background-position: center;
     background-repeat: no-repeat;
-    border-top: .6rem solid #fff;
-    border-bottom: .6rem solid #fff;
+    border-top: .6rem solid rgba(0,0,0,0.25);
+    border-bottom: .6rem solid rgba(0,0,0,0.25);
 }
 
 .iphone-11-pro{
