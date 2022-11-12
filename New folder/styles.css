@@ -77,7 +77,7 @@ header{
 /*iphone 11 pro section*/
 .iphone-11-pro{
     height: 69.2rem;
-    background: url("background.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("background.jpg");
     margin-top: 4.4rem;
     
 
@@ -130,11 +130,11 @@ header{
 /*iphone 11 section */
 
 .iphone-11{
-    background: url("skiinstruct.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("skiinstruct.jpg");
 }
 
 .title-dark{
-    color: #000;
+    color: #fff;
 }
 
 .cta-link-darker{
@@ -145,8 +145,10 @@ header{
     border-bottom-color: #0070c9;
 }
 
+/*watch section*/
+
 .watch{
-    background: url("hockeywin.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("hockeywin.jpg");
 }
 
 .title-heading-watch{
@@ -175,15 +177,15 @@ header{
 
 @media screen and (max-width: 1068px){
     .iphone-11-pro{
-        background:url(background.jpg)
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(background.jpg)
     }
 
     .iphone-11{
-        background:url(skiinstruct.jpg)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(skiinstruct.jpg)
     }
 
     .watch{
-        background:url(hockeywin.jpg)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywin.jpg)
     }
 
     .hero{
@@ -370,15 +372,15 @@ header{
 
 @media screen and (max-width: 735px){
     .iphone-11-pro{
-        background:url(background.jpg)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(background.jpg)
     }
 
     .iphone-11{
-        background:url(skiinstruct.jpg)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(skiinstruct.jpg)
     }
 
     .watch{
-        background:url(hockeywin.jpg)
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(hockeywin.jpg)
     }
 
     .hero{
