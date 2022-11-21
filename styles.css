@@ -77,7 +77,7 @@ header{
 /*iphone 11 pro section*/
 .iphone-11-pro{
     height: 69.2rem;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("background.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("grouppushupstransparent.png");
     margin-top: 4.4rem;
     
 
@@ -179,7 +179,7 @@ header{
 
 @media screen and (max-width: 1068px){
     .iphone-11-pro{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(background.jpg)
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(grouppushupstransparent.png)
     }
 
     .iphone-11{
@@ -375,7 +375,7 @@ header{
 
 @media screen and (max-width: 735px){
     .iphone-11-pro{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("background.jpg")
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("grouppushupstransparent.png")
     }
 
     .iphone-11{

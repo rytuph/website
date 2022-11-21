@@ -208,7 +208,7 @@ section{
     }
 
     .hero{
-        height: 70vh;
+        height: 100vh;
         background-size: cover;
         background-position: bottom center;
         background-repeat: no-repeat;
@@ -404,7 +404,7 @@ section{
     }
 
     .hero{
-        height: 70vh;
+        height: 120vh;
         background-size: cover;
         background-position: bottom center;
         background-repeat: no-repeat;
