@@ -45,10 +45,13 @@ header{
 }
 
 .nav-link{
+    width: 175px;
     font-size: 1.4rem;
     color: #fff;
     padding: 0 1rem;
     transition: opacity .5s;
+    text-align: center;
+    padding-bottom: 10%;
 }
 
 .nav-link:hover{
@@ -60,7 +63,7 @@ header{
     height: 4.4rem;
     background: url("Rlogo16xwhite.png") center no-repeat; /* might have to input images differently*/
 }
-
+/* removed linkedin and github icons
 .nav-link-search{
     width: 1.6rem;
     height: 4.4rem;
@@ -73,14 +76,20 @@ header{
     background: url("linkedin.png") center no-repeat;
 
 }
+*/
+#left-link{
+    margin-left: 25%;
+}
+
+#right-link{
+    margin-right: 35%;
+}
 
 /*iphone 11 pro section*/
 .iphone-11-pro{
     height: 69.2rem;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("grouppushupstransparent.png");
     margin-top: 4.4rem;
-    
-
 }
 
 .title{
