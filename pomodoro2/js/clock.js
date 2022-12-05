@@ -1,3 +1,15 @@
+// connecting js to html
+
+// buttons
+let pomodoroButton = document.getElementById('pomodorobutton');
+let shortButton = document.getElementById('shortbreakbutton');
+let longButton = document.getElementById('longbreakbutton');
+//
+let clock = document.getElementById('clock');
+let playButton = document.getElementById('playbutton');
+
+let interval;
+
 // class to create a countdown timer
 class CountdownTimer {
     // setup timer values
@@ -22,6 +34,7 @@ class CountdownTimer {
         const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
         const mins = Math.floor((total / 1000 / 60) % 60);
         const secs = Math.floor((total / 1000) % 60);
+        console.log(total)
         return {
             total,
             days,
@@ -54,13 +67,22 @@ class CountdownTimer {
         }
     }
 
-    startTimer() {
+    cancelPreviousTimer() {
+        clearInterval(interval);
+    }
+
+    startTimer(targetDate) {
+        // cancelPreviousTimer();
+        console.log(this.targetDate)
         const timer = this.getTimeRemaining(this.targetDate);
         this.updateTimer(timer);
-        this.updateColors();
-        setInterval(() => {
+        // this.updateColors();
+        
+        interval = setInterval(() => {
+            
             const timer = this.getTimeRemaining(this.targetDate);
             this.updateTimer(timer);
+            
         }, 1000);
     }
 }

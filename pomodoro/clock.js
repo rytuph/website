@@ -65,6 +65,10 @@ class CountdownTimer {
         }
     }
 
+    // cancelPreviousTimer() {
+
+    // }
+
     startTimer() {
         const timer = this.getTimeRemaining(this.targetDate);
         this.updateTimer(timer);
