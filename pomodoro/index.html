@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <class class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <span class="line line-top"></span>
+                            <span class="line line-bottom"></span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-apple"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-mobile -->
+                <ul class="nav-list nav-list-larger"> 
+                    <li class="nav-item nav-item-hidden" id="left-link">
+                        <a href="index.html" class="nav-link nav-link-apple"></a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="https://www.google.com" class="nav-link">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.google.com" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.google.com" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.google.com" class="nav-link">Social Medias</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="https://www.google.com" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/rytuph" class="nav-link" target="_blank">Github</a>
+                    </li>
+                    <li class="nav-item" id="right-link">
+                        <a href="https://www.linkedin.com/in/ryanzhang-link/" class="nav-link" target="_blank">LinkedIn</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a href="#" class="nav-link nav-link-search"></a>
+                    </li>
+                    <li class="nav-item nav-item-hidden">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>-->
+                </ul>
+                <!-- /.nav-list nav-list-larger -->
+            </nav>
+        </class>
+    </header>
+    
+    <section class="hero pomodoro-clock">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-heading">Pomodoro Clock</h2>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-item" >
+                    <button type="button" id="pomodorobutton">Pomodoro</button>
+                </li>
+                <li class="menu-item" >
+                    <button type="button" id="shortbreakbutton">Short Break</button>
+                </li>
+                <li class="menu-item" >
+                    <button type="button" id="longbreakbutton">Long Break</button>
+                </li>
+            </ul>
+            <div class="clock" id="clock">
+                <div data-value="days"></div>
+                <div data-value="hours"></div>
+                <div data-value="minutes"></div>
+                <div data-value="seconds"></div>
+            </div>
+            <div class="play">
+                <button type="button" id="playbutton">play/pause</button>
+            </div>
+        </div>
+    </section>
+<script src="main.js"></script>
+<script src="clock.js"></script>
+<script src="init.js"></script>
+</body>
+</html>
