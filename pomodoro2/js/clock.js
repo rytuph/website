@@ -64,7 +64,13 @@ class CountdownTimer {
         }
     }
 
-    startTimer() {
+    cancelPreviousTimer() {
+        clearInterval(interval);
+    }
+
+    startTimer(targetDate) {
+        // cancelPreviousTimer();
+        console.log(this.targetDate)
         const timer = this.getTimeRemaining(this.targetDate);
         this.updateTimer(timer);
         // this.updateColors();
