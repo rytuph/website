@@ -7,7 +7,7 @@ let longButton = document.getElementById('longbreakbutton');
 //
 let clock = document.getElementById('clock');
 let playButton = document.getElementById('playbutton');
-
+let newTime = false;
 
 // class to create a countdown timer
 class CountdownTimer {
@@ -26,7 +26,9 @@ class CountdownTimer {
             secs: document.querySelector(`${this.selector} [data-value="seconds"]`),
         };
     }
-
+    endTimer() {
+        delete this;
+    }
     getTimeRemaining(endtime) {
         const total = Date.parse(endtime) - Date.parse(new Date());
         const days = Math.floor(total / (1000 * 60 * 60 * 24));
@@ -65,17 +67,21 @@ class CountdownTimer {
         }
     }
 
-    // cancelPreviousTimer() {
-
-    // }
+    cancelPreviousTimer() {
+        newTime = true;
+    }
 
     startTimer() {
+        console.log("hellohh");
+
         const timer = this.getTimeRemaining(this.targetDate);
         this.updateTimer(timer);
-        this.updateColors();
-        setInterval(() => {
+        // this.updateColors();
+        console.log("hello hello");
+        let id = setInterval(() => {
             const timer = this.getTimeRemaining(this.targetDate);
             this.updateTimer(timer);
         }, 1000);
+
     }
 }
