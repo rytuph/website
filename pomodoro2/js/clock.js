@@ -69,7 +69,7 @@ class CountdownTimer {
         clearInterval(interval);
     }
 
-    alarm()
+    // alarm()
 
     startTimer() {
         this.cancelPreviousTimer();
