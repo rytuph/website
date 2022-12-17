@@ -7,6 +7,7 @@ let longButton = document.getElementById('longbreakbutton');
 //
 let clock = document.getElementById('clock');
 let playButton = document.getElementById('playbutton');
+let interval
 
 // class to create a countdown timer
 class CountdownTimer {
@@ -68,13 +69,16 @@ class CountdownTimer {
         clearInterval(interval);
     }
 
-    startTimer(targetDate) {
-        // cancelPreviousTimer();
+    alarm()
+
+    startTimer() {
+        this.cancelPreviousTimer();
         console.log(this.targetDate)
         const timer = this.getTimeRemaining(this.targetDate);
         this.updateTimer(timer);
         // this.updateColors();
-        setInterval(() => {
+        interval=setInterval(() => {
+            // if (this.getTimeRemaining === )
             const timer = this.getTimeRemaining(this.targetDate);
             this.updateTimer(timer);
         }, 1000);
