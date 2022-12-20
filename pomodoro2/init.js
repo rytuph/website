@@ -30,7 +30,7 @@ longButton.addEventListener('click', function(){
 
 play_pause.addEventListener('click', function(){
     
-    pause();
+    playpause();
 })
 
 // timer.startTimer(); 
