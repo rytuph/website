@@ -1,4 +1,8 @@
-
+// buttons
+let pomodoroButton = document.getElementById('pomodorobutton');
+let shortButton = document.getElementById('shortbreakbutton');
+let longButton = document.getElementById('longbreakbutton');
+let play_pause = document.getElementById('playbutton');
 
 pomodoroButton.addEventListener('click', function(){
     const timer = new CountdownTimer({
@@ -24,4 +28,9 @@ longButton.addEventListener('click', function(){
     timer.startTimer();
 })
 
-timer.startTimer(); 
+play_pause.addEventListener('click', function(){
+    
+    pause();
+})
+
+// timer.startTimer(); 

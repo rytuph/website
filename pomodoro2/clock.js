@@ -1,9 +1,6 @@
 // connecting js to html
 
-// buttons
-let pomodoroButton = document.getElementById('pomodorobutton');
-let shortButton = document.getElementById('shortbreakbutton');
-let longButton = document.getElementById('longbreakbutton');
+
 //
 let clock = document.getElementById('clock');
 let playButton = document.getElementById('playbutton');
@@ -79,12 +76,21 @@ class CountdownTimer {
         }
     }
 
-    pause(){
+    playpause(){
+        // if last interval exists
+        // store current time left
+        console.log('hey');
+        // console.log(this.getTimeRemaining(this.targetDate))
+        // calculate time need to add on to time when play is called
+        // stop interval
+        // display current time left
         
+        // if no interval exists
+        // startTimer with timeremaining stored from pause
+
     }
 
     play(){
-        
     }
 
     startTimer() {
