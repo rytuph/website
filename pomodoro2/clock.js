@@ -69,17 +69,32 @@ class CountdownTimer {
         clearInterval(interval);
     }
 
-    // alarm()
+    checkOver({ days, hours, mins, secs }){
+        if (days === 0 && hours === 0 && mins === 0 && secs === 0){
+            clearInterval(interval);
+            this.refs.days.textContent = 0;
+            this.refs.hours.textContent = 0;
+            this.refs.mins.textContent = 0;
+            this.refs.secs.textContent = 0;
+        }
+    }
+
+    pause(){
+        
+    }
+
+    play(){
+        
+    }
 
     startTimer() {
         this.cancelPreviousTimer();
-        console.log(this.targetDate)
         const timer = this.getTimeRemaining(this.targetDate);
         this.updateTimer(timer);
         // this.updateColors();
         interval=setInterval(() => {
-            // if (this.getTimeRemaining === )
             const timer = this.getTimeRemaining(this.targetDate);
+            this.checkOver(timer);
             this.updateTimer(timer);
         }, 1000);
     }

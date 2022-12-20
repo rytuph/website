@@ -11,7 +11,7 @@ pomodoroButton.addEventListener('click', function(){
 shortButton.addEventListener('click', function(){
     const timer = new CountdownTimer({
         selector: "#clock",
-        targetDate: new Date(new Date().getTime()+(5*60*1000))
+        targetDate: new Date(new Date().getTime()+(5*1000))
     });
     timer.startTimer();
 })
