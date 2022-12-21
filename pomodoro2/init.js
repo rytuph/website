@@ -35,6 +35,7 @@ longButton.addEventListener('click', function(){
 
 play_pause.addEventListener('click', function(){
     console.log(typeof interval);
+    console.log('test')
     if (typeof interval == 'number') {
 	// is there better way to judge if interval is running?
 	// timer.cancelPreviousTimer();
