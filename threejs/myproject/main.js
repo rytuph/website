@@ -73,7 +73,7 @@ scene.add(ryan);
 
 // picture 2
 
-const ryan2Texture = new THREE.TextureLoader().load('ryan.png');
+const ryan2Texture = new THREE.TextureLoader().load('skiinstruct.jpg');
 
 const ryan2 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: ryan2Texture }));
 
@@ -81,7 +81,7 @@ scene.add(ryan2);
 
 // picture 3
 
-const ryan3Texture = new THREE.TextureLoader().load('skiinstruct.jpg');
+const ryan3Texture = new THREE.TextureLoader().load('lasertag.png');
 
 const ryan3 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: ryan3Texture }));
 
@@ -108,11 +108,13 @@ moon.position.setX(-10);
 ryan.position.z = -5;
 ryan.position.x = 2;
 
-ryan2.position.z = 42;
+ryan2.position.z = 33;
 ryan2.position.x = 0;
 
-ryan3.position.z = 33;
+ryan3.position.z = 42;
 ryan3.position.x = 0;
+
+
 
 // Scroll Animation
 
