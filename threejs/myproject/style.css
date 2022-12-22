@@ -35,6 +35,24 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
+.school{
+  display:inline;
+  font-size: 2rem;
+  padding-left: 1%;
+}
+
+.school-logo{
+  padding-top: 1%;
+}
+
+.school-text{
+  padding-bottom: 50%;
+  position: relative;
+  bottom: 20%;
+}
+
+/* text  */
+
 p, li{
   /* font-family: 'Roboto Slab', serif; */
   font-family: 'Lato', sans-serif;
@@ -58,19 +76,33 @@ canvas {
   left: 0;
 }
 
-/* Skills */
+/* Skills hover*/
 
-.python{
-  width: 1.6rem;
-  height: 4.4rem;
-  background: url("linkedin.png") no-repeat;
+.column#caption {
+	position: relative;
+}
+.column#caption .text {
+		position: absolute;		
+    top: 120%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;    		
+}
+.column#caption .text h1 {		
+		margin: 0;		
+		color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.column#caption:hover .text {
+	opacity: 1;
+}
+.column#caption:hover img {
+	-webkit-filter: sepia(90%);
 }
 
-.javascript{
-  width: 1.6rem;
-  height: 4.4rem;
-  background: url("linkedin.png") no-repeat;
-}
+/* skills end  */
 
 header {
   background: var(--dark-bg);

@@ -60,12 +60,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('holespace.jpg');
+const spaceTexture = new THREE.TextureLoader().load('images/holespace.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const ryanTexture = new THREE.TextureLoader().load('ryan.png');
+const ryanTexture = new THREE.TextureLoader().load('images/ryan.png');
 
 const ryan = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: ryanTexture }));
 
@@ -73,7 +73,7 @@ scene.add(ryan);
 
 // picture 2
 
-const ryan2Texture = new THREE.TextureLoader().load('skiinstruct.jpg');
+const ryan2Texture = new THREE.TextureLoader().load('images/skiinstruct.jpg');
 
 const ryan2 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: ryan2Texture }));
 
@@ -81,7 +81,7 @@ scene.add(ryan2);
 
 // picture 3
 
-const ryan3Texture = new THREE.TextureLoader().load('lasertag.png');
+const ryan3Texture = new THREE.TextureLoader().load('images/lasertag.png');
 
 const ryan3 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: ryan3Texture }));
 
@@ -89,8 +89,8 @@ scene.add(ryan3);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('images/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('images/normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
