@@ -71,21 +71,61 @@ const ryan = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicM
 
 scene.add(ryan);
 
-// picture 2
+// skikids
 
-const ryan2Texture = new THREE.TextureLoader().load('images/skiinstruct.jpg');
+const skikidsTexture = new THREE.TextureLoader().load('images/skikids.png');
 
-const ryan2 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: ryan2Texture }));
+const skikids = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: skikidsTexture }));
 
-scene.add(ryan2);
+scene.add(skikids);
 
-// picture 3
+// laser
 
-const ryan3Texture = new THREE.TextureLoader().load('images/lasertag.png');
+const laserTexture = new THREE.TextureLoader().load('images/lasertag.png');
 
-const ryan3 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: ryan3Texture }));
+const laser = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: laserTexture }));
 
-scene.add(ryan3);
+scene.add(laser);
+
+// hockey
+
+const hockeyTexture = new THREE.TextureLoader().load('images/hockeywin.png');
+
+const hockey = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: hockeyTexture }));
+
+scene.add(hockey)
+
+// ski
+
+const skiTexture = new THREE.TextureLoader().load('images/skiinstruct.jpg');
+
+const ski = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: skiTexture }));
+
+scene.add(ski)
+
+// tennis
+
+const tennisTexture = new THREE.TextureLoader().load('images/tennisserve.png');
+
+const tennis = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: tennisTexture }));
+
+scene.add(tennis)
+
+// bike
+
+const bikeTexture = new THREE.TextureLoader().load('images/bike.png');
+
+const bike = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: bikeTexture }));
+
+scene.add(bike)
+
+// gaspe
+
+const gaspeTexture = new THREE.TextureLoader().load('images/gaspe.png');
+
+const gaspe = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: gaspeTexture }));
+
+scene.add(gaspe)
 
 // Moon
 
@@ -102,19 +142,39 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
+// object positions
+
 moon.position.z = 30;
 moon.position.setX(-10);
 
 ryan.position.z = -5;
 ryan.position.x = 2;
 
-ryan2.position.z = 33;
-ryan2.position.x = 0;
+skikids.position.z = 33;
+skikids.position.x = 0;
 
-ryan3.position.z = 42;
-ryan3.position.x = 0;
+laser.position.z = 42;
+laser.position.x = 0;
 
+hockey.position.z = 70
+hockey.position.x = -5;
+hockey.position.y = 0;
 
+ski.position.z = 75
+ski.position.x = -5;
+ski.position.y = 0;
+
+tennis.position.z = 80
+tennis.position.x = -5;
+tennis.position.y = 0;
+
+bike.position.z = 85
+bike.position.x = -5;
+bike.position.y = 0;
+
+gaspe.position.z = 90
+gaspe.position.x = -5;
+gaspe.position.y = 0;
 
 // Scroll Animation
 
