@@ -73,59 +73,59 @@ scene.add(ryan);
 
 // skikids
 
-const skikidsTexture = new THREE.TextureLoader().load('images/skikids.png');
+// const skikidsTexture = new THREE.TextureLoader().load('images/skikids.png');
 
-const skikids = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: skikidsTexture }));
+// const skikids = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: skikidsTexture }));
 
-scene.add(skikids);
+// scene.add(skikids);
 
-// laser
+// // laser
 
-const laserTexture = new THREE.TextureLoader().load('images/lasertag.png');
+// const laserTexture = new THREE.TextureLoader().load('images/lasertag.png');
 
-const laser = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: laserTexture }));
+// const laser = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: laserTexture }));
 
-scene.add(laser);
+// scene.add(laser);
 
-// hockey
+// // hockey
 
-const hockeyTexture = new THREE.TextureLoader().load('images/hockeywin.png');
+// const hockeyTexture = new THREE.TextureLoader().load('images/hockeywin.png');
 
-const hockey = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: hockeyTexture }));
+// const hockey = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: hockeyTexture }));
 
-scene.add(hockey)
+// scene.add(hockey)
 
-// ski
+// // ski
 
-const skiTexture = new THREE.TextureLoader().load('images/skiinstruct.jpg');
+// const skiTexture = new THREE.TextureLoader().load('images/skiinstruct.jpg');
 
-const ski = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: skiTexture }));
+// const ski = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: skiTexture }));
 
-scene.add(ski)
+// scene.add(ski)
 
-// tennis
+// // tennis
 
-const tennisTexture = new THREE.TextureLoader().load('images/tennisserve.png');
+// const tennisTexture = new THREE.TextureLoader().load('images/tennisserve.png');
 
-const tennis = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: tennisTexture }));
+// const tennis = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: tennisTexture }));
 
-scene.add(tennis)
+// scene.add(tennis)
 
-// bike
+// // bike
 
-const bikeTexture = new THREE.TextureLoader().load('images/bike.png');
+// const bikeTexture = new THREE.TextureLoader().load('images/bike.png');
 
-const bike = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: bikeTexture }));
+// const bike = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: bikeTexture }));
 
-scene.add(bike)
+// scene.add(bike)
 
-// gaspe
+// // gaspe
 
-const gaspeTexture = new THREE.TextureLoader().load('images/gaspe.png');
+// const gaspeTexture = new THREE.TextureLoader().load('images/gaspe.png');
 
-const gaspe = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: gaspeTexture }));
+// const gaspe = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: gaspeTexture }));
 
-scene.add(gaspe)
+// scene.add(gaspe)
 
 // Moon
 
@@ -150,31 +150,31 @@ moon.position.setX(-10);
 ryan.position.z = -5;
 ryan.position.x = 2;
 
-skikids.position.z = 33;
-skikids.position.x = 0;
+// skikids.position.z = 33;
+// skikids.position.x = 0;
 
-laser.position.z = 42;
-laser.position.x = 0;
+// laser.position.z = 42;
+// laser.position.x = 0;
 
-hockey.position.z = 70
-hockey.position.x = -5;
-hockey.position.y = 0;
+// hockey.position.z = 70
+// hockey.position.x = -5;
+// hockey.position.y = 0;
 
-ski.position.z = 75
-ski.position.x = -5;
-ski.position.y = 0;
+// ski.position.z = 75
+// ski.position.x = -5;
+// ski.position.y = 0;
 
-tennis.position.z = 80
-tennis.position.x = -5;
-tennis.position.y = 0;
+// tennis.position.z = 80
+// tennis.position.x = -5;
+// tennis.position.y = 0;
 
-bike.position.z = 85
-bike.position.x = -5;
-bike.position.y = 0;
+// bike.position.z = 85
+// bike.position.x = -5;
+// bike.position.y = 0;
 
-gaspe.position.z = 90
-gaspe.position.x = -5;
-gaspe.position.y = 0;
+// gaspe.position.z = 90
+// gaspe.position.x = -5;
+// gaspe.position.y = 0;
 
 // Scroll Animation
 
