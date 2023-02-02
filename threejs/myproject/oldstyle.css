@@ -1,0 +1,147 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+@font-face {
+  font-family: monreal;
+  src: url(monreal.ttf);
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.school{
+  display:inline;
+  font-size: 2rem;
+  padding-left: 1%;
+}
+
+.school-logo{
+  padding-top: 1%;
+}
+
+.school-text{
+  padding-bottom: 50%;
+  position: relative;
+  bottom: 20%;
+}
+
+/* text  */
+
+p, li{
+  /* font-family: 'Roboto Slab', serif; */
+  font-family: 'Lato', sans-serif;
+
+}
+
+h1, h2, h3, blockquote {
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: monreal; */
+  font-weight: 700;
+  font-style: normal;
+}
+h1{
+  font-family: 'Classico', sans-serif;
+                                                
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Skills hover*/
+
+.column#caption {
+	position: relative;
+}
+.column#caption .text {
+		position: absolute;		
+    top: 120%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;    		
+}
+.column#caption .text h1 {		
+		margin: 0;		
+		color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.column#caption:hover .text {
+	opacity: 1;
+}
+.column#caption:hover img {
+	-webkit-filter: sepia(90%);
+}
+
+/* skills end  */
+
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+  
+}
+
+blockquote p {
+  /* color: black; */
+  background: var(--dark-bg);
+  font-size: 2rem;
+  display: inline;
+  line-height: 1;
+}
+
+.left {
+  grid-column: 6 / 12;
+}
+
+.invis{
+  padding: 60rem;
+  visibility: hidden;
+}

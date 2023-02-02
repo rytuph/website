@@ -25,7 +25,7 @@ const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 const material = new THREE.MeshStandardMaterial({ color: 0x380000});
 const torus = new THREE.Mesh(geometry, material);
 
-scene.add(torus);
+// scene.add(torus);
 
 // Lights
 
@@ -60,7 +60,7 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('images/holespace.jpg');
+const spaceTexture = new THREE.TextureLoader().load('images/black.png');
 scene.background = spaceTexture;
 
 // Avatar
@@ -144,14 +144,16 @@ scene.add(moon);
 
 // object positions
 
-moon.position.z = 30;
-moon.position.setX(-10);
+moon.position.z = -15;
+moon.position.y = -3
+moon.position.x = -3
+// moon.position.setX(-10);
 
 ryan.position.z = -5;
 ryan.position.x = 2;
 
 // skikids.position.z = 33;
-// skikids.position.x = 0;
+// skikids.position.x = 0;ww
 
 // laser.position.z = 42;
 // laser.position.x = 0;
@@ -180,9 +182,9 @@ ryan.position.x = 2;
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  moon.rotation.x += 0.05;
-  moon.rotation.y += 0.075;
-  moon.rotation.z += 0.05;
+  moon.rotation.x += 0.015;
+  moon.rotation.y += 0.0275;
+  moon.rotation.z += 0.015;
 
   ryan.rotation.y += 0.01;
   ryan.rotation.z += 0.01;
