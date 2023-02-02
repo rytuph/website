@@ -1,3 +1,7 @@
+.white, .white a {
+    color: #fff;
+}
+
 canvas {
     position: fixed;
     top: 0;
@@ -12,10 +16,10 @@ main {
   position: absolute;
   width: 100%;
   margin: 0px auto;
-  padding: 120px 0px;  
+  /* padding: 120px 0px;   */
 }  
 
-.first-page{
+.first-page {
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -45,20 +49,38 @@ main {
     margin: 10px;
 }
 
-.projects{
+#arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projects {
     
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    padding: 10%;
 }
 
-.card{
+.card {
     background-color: rgba(0,0,0,0.75);
     border-color: aqua;
     border-width: 2px;
 
+}
+
+.card-first {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+}
+
+.card-link {
+    text-align: right;
 }
 
 #winner{
@@ -87,29 +109,83 @@ main {
         display: flex;
         flex-direction: column;
     }
+
     #name {
         padding: 0;
         /* position:absolute; */
         align-items:center;
     }
+
     #intro {
         padding:0;
         /* position: relative; */
         align-items: center;
     }
+
     .projects {
-        padding: 0%;
+        padding: 0px;
     }
 
     .card {
-        width: 100%;
+        width: 95%;
     }
 }
 
 @media screen and (min-width: 768px){
+    #projtitle {
+        padding-left: 10%;
+    }
 
+    .first-page {
+        flex-direction: row;
+    }
+
+    #name {
+        padding-left: 10%;
+        /* position:absolute; */
+        align-items:center;
+        white-space:normal;
+    }
+
+    #intro {
+        padding-right:10%;
+        /* position: relative; */
+        align-items: center;
+    }
+    
+    .projects {
+    }
+
+    .card {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 992px){
+    #projtitle {
+        padding-left: 10%;
+    }
 
+    .first-page {
+        flex-direction: row;
+    }
+
+    #name {
+        padding-left: 20%;
+        /* position:absolute; */
+        align-items:center;
+    }
+
+    #intro {
+        padding-right:20%;
+        /* position: relative; */
+        align-items: center;
+    }
+
+    .projects {
+    }
+
+    .card {
+        width: 25%;
+    }
 }
