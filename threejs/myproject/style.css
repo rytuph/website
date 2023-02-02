@@ -12,9 +12,7 @@ main {
   position: absolute;
   width: 100%;
   margin: 0px auto;
-  padding: 120px 0px;
-  
-  
+  padding: 120px 0px;  
 }  
 
 .first-page{
@@ -33,18 +31,17 @@ main {
 
 #name {
     /* grid-column: 3 / 6; */
-    padding-left: 30%;
+    padding-left: 20%;
     
     margin: 10px;
     font-weight: bold;
-    font-size: 2em;
-
+    font-size: 4em;
+    white-space: nowrap;
 }
 
 #intro {
     /* grid-column: 7 / 10; */
-    padding-right: 30%;
-    
+    padding-right: 20%;
     margin: 10px;
 }
 
@@ -54,10 +51,11 @@ main {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    padding: 10%;
 }
 
 .card{
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.75);
     border-color: aqua;
     border-width: 2px;
 
@@ -76,9 +74,42 @@ main {
 
 .btn {
     padding: rem;
-    
+    background-color: rgba(0,0,0,0.75);
+    /* border-color: rgba(0,0,0,0.1); */
 }
 
 #winnerbtn {
     background-color: goldenrod;
+}
+
+@media screen and (min-width: 0px){
+    .first-page {
+        display: flex;
+        flex-direction: column;
+    }
+    #name {
+        padding: 0;
+        /* position:absolute; */
+        align-items:center;
+    }
+    #intro {
+        padding:0;
+        /* position: relative; */
+        align-items: center;
+    }
+    .projects {
+        padding: 0%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+
 }
