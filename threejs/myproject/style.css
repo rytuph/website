@@ -80,6 +80,8 @@ main {
 
 }
 
+
+
 .card-first {
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +131,10 @@ main {
         padding:0;
         /* position: relative; */
         align-items: center;
+    }
+
+    #arrow {
+        flex-direction: column;
     }
 
     .projects {
@@ -191,10 +197,20 @@ main {
         align-items: center;
     }
 
+    #arrow {
+        display: flex;
+        flex-direction: column;
+    }
+
     .projects {
     }
 
     .card {
         width: 25%;
     }
+
+    /* .card:hover {
+        width: 26%;    
+        height: height+1%;
+    } */
 }
