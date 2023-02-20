@@ -84,14 +84,16 @@ main {
 
 .card-first {
     display: flex;
-    flex-wrap: wrap;
+    /* justify-content: flex-start; */
     flex-direction: row;
 
 
 }
 
 .card-link {
-    text-align: right;
+    /* text-align: right; */
+    justify-content: flex-end;
+    /* padding-right: 0rem; */
 }
 
 #winner{
