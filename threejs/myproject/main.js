@@ -145,7 +145,7 @@ scene.add(moon);
 // object positions
 
 moon.position.z = -15;
-moon.position.y = -3
+moon.position.y = 5
 moon.position.x = -3
 // moon.position.setX(-10);
 
