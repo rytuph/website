@@ -93,6 +93,7 @@ main {
 .card-link {
     /* text-align: right; */
     justify-content: flex-end;
+    float: right;
     /* padding-right: 0rem; */
 }
 
