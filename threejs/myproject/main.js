@@ -65,7 +65,7 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const ryanTexture = new THREE.TextureLoader().load('images/ryan.png');
+const ryanTexture = new THREE.TextureLoader().load('images/ryanz.jpg');
 
 const ryan = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: ryanTexture }));
 
