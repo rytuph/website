@@ -60,6 +60,8 @@ main {
     /* gap: 1rem;    */
 }
 
+
+
 #projtitle {
     display: flex;
     align-items: center;
@@ -69,7 +71,7 @@ main {
 .projects {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1em;
     flex-wrap: wrap;
 }
 
@@ -95,6 +97,11 @@ main {
     justify-content: flex-end;
     float: right;
     /* padding-right: 0rem; */
+}
+
+.card-img {
+    justify-content: flex-end;
+    float: right;
 }
 
 #winner{
@@ -201,7 +208,7 @@ main {
     }
 
     #arrow {
-        display: flex;
+        display: flex; 
         flex-direction: column;
     }
 
@@ -216,4 +223,8 @@ main {
         width: 26%;    
         height: height+1%;
     } */
+}
+
+.workcard {
+    width: 77%;
 }
